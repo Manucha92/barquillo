@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carta | Barquillo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-4">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Barquillo - Inicio" width="120">
+            </a>
+
+            <!-- Botón del menú para celulares -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir o cerrar el menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="carta.html" aria-current="page">Carta</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservá</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visitanos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego del barquillero</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">Compras</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <main>
+     
+    <section class="encabezado-nosotros">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- Texto sobre fondo rojo -->
+            <div class="col-12 col-md-6 texto-encabezado-nosotros">
+                <div>
+                    <h1>
+                        <em>Nuestra carta</em><br>
+                        los sabores de siempre con gusto a nuevo
+                    </h1>
+                    
+                    <p>
+                        Conocé los nuevos clásicos dulces y salados<br>
+                        para disfrutar solo o acompañado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Foto de la mesa -->
+            <div class="col-12 col-md-6">
+                <img
+                 src="img/carta-qr.png"
+                 alt="Una persona consulta la carta desde el código QR de la mesa"
+                 class="foto-encabezado-nosotros">
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <nav class="categorias-carta" aria-label="Categorías de la carta">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+
+            <a href="#cafeteria" class="boton-categoria">
+                CAFETERÍA
+            </a>
+
+            <a href="#patisserie" class="boton-categoria">
+                PÂTISSERIE
+            </a>
+
+            <a href="#meriendas" class="boton-categoria">
+                MERIENDAS
+            </a>
+
+        </div>
+    </div>
+    </nav>
+<section id="cafeteria" class="seccion-carta">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- Productos y precios -->
+            <div class="col-12 col-md-6 contenido-carta">
+
+                <h2><em>Cafetería</em></h2>
+
+                <ul class="lista-carta">
+                    <li>
+                        <span>Espresso</span>
+                        <span>$4.500</span>
+                    </li>
+                    <li>
+                        <span>Latte</span>
+                        <span>$4.200</span>
+                    </li>
+                    <li>
+                        <span>Affogato</span>
+                        <span>$5.000</span>
+                    </li>
+                    <li>
+                        <span>Americano</span>
+                        <span>$4.300</span>
+                    </li>
+                    <li>
+                        <span>Macchiato</span>
+                        <span>$5.200</span>
+                    </li>
+                    <li>
+                        <span>Cappuccino</span>
+                        <span>$5.500</span>
+                    </li>
+                    <li>
+                        <span>Cortado</span>
+                        <span>$3.800</span>
+                    </li>
+                    <li>
+                        <span>Café con leche</span>
+                        <span>$4.000</span>
+                    </li>
+                    <li>
+                        <span>Flat White</span>
+                        <span>$5.000</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Foto -->
+            <div class="col-12 col-md-6 columna-foto-carta">
+                <img
+                    src="img/carta-cafeteria.jpg"
+                    alt="Taza de café vista desde arriba"
+                    class="foto-carta">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="patisserie" class="seccion-carta">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- Foto -->
+            <div class="col-12 col-md-6 columna-foto-carta order-2 order-md-1">
+                <img
+                    src="img/anillito.png"
+                    alt="Galletita con cobertura rosa sobre un plato"
+                    class="foto-carta">
+            </div>
+
+            <!-- Productos y precios -->
+            <div class="col-12 col-md-6 contenido-carta order-1 order-md-2">
+                <h2><em>Pâtisserie</em></h2>
+
+                <ul class="lista-carta">
+                    <li>
+                        <span>Alfajor pepitos vainilla y dulce de leche</span>
+                        <span>$6.500</span>
+                    </li>
+                    <li>
+                        <span>Oreo bañadas</span>
+                        <span>$6.000</span>
+                    </li>
+                    <li>
+                        <span>Óperas con pistacho</span>
+                        <span>$5.500</span>
+                    </li>
+                    <li>
+                        <span>Anillitos rellenos</span>
+                        <span>$7.000</span>
+                    </li>
+                    <li>
+                        <span>Alfajor tentación</span>
+                        <span>$7.200</span>
+                    </li>
+                    <li>
+                        <span>Boca de dama</span>
+                        <span>$5.500</span>
+                    </li>
+                    <li>
+                        <span>Pepitas</span>
+                        <span>$5.800</span>
+                    </li>
+                    <li>
+                        <span>Merenguitos rellenos</span>
+                        <span>$6.300</span>
+                    </li>
+                    <li>
+                        <span>Tortuguitas</span>
+                        <span>$5.800</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="meriendas" class="seccion-carta">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- Productos y precios -->
+            <div class="col-12 col-md-6 contenido-carta">
+
+                <h2><em>Meriendas</em></h2>
+
+                <ul class="lista-carta">
+                    <li>
+                        <span>Chocolatada con panera de galletitas</span>
+                        <span>$19.500</span>
+                    </li>
+                    <li>
+                        <span>Café con surtido de alfajorcitos</span>
+                        <span>$18.000</span>
+                    </li>
+                    <li>
+                        <span>Jugo de naranja con fosforitos</span>
+                        <span>$15.000</span>
+                    </li>
+                    <li>
+                        <span>Té con budincitos</span>
+                        <span>$14.300</span>
+                    </li>
+                    <li>
+                        <span>Chocolatada con barquillos</span>
+                        <span>$17.000</span>
+                    </li>
+                    <li>
+                        <span>Café con pepas de membrillo y batata</span>
+                        <span>$15.500</span>
+                    </li>
+                    <li>
+                        <span>Chocolatada con canasta de oreos bañadas</span>
+                        <span>$19.800</span>
+                    </li>
+                    <li>
+                        <span>Café con surtido de óperas</span>
+                        <span>$14.000</span>
+                    </li>
+                    <li>
+                        <span>Té con lata de galletitas de manteca</span>
+                        <span>$21.000</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Foto -->
+            <div class="col-12 col-md-6 columna-foto-carta">
+                <img
+                    src="img/carta-meriendas.png"
+                    alt="Lata de galletitas surtidas acompañada de té"
+                    class="foto-carta">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="otras-bebidas" class="otras-bebidas">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <div class="col-12 col-md-6 contenido-carta">
+
+                <h2><em>Otras bebidas</em></h2>
+
+                <ul class="lista-carta">
+                    <li>
+                        <span>Agua con y sin gas</span>
+                        <span>$3.500</span>
+                    </li>
+                    <li>
+                        <span>Jugo de naranja</span>
+                        <span>$4.500</span>
+                    </li>
+                    <li>
+                        <span>Limonada</span>
+                        <span>$4.000</span>
+                    </li>
+                    <li>
+                        <span>Gaseosas</span>
+                        <span>$3.800</span>
+                    </li>
+                    <li>
+                        <span>Chocolatada</span>
+                        <span>$4.200</span>
+                    </li>
+                    <li>
+                        <span>Té</span>
+                        <span>$3.500</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reserva-carta banner-oscuro">
+    <div class="container-fluid">
+
+        <h2>Tu mesa te espera</h2>
+
+        <a href="reservas.html" class="boton-rojo">
+            RESERVÁ TU LUGAR
+        </a>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="pie-pagina">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img
+                    src="img/logo.png"
+                    alt="Barquillo - Inicio"
+                    class="logo-footer">
+            </a>
+
+            <!-- Contacto -->
+            <div class="contacto-footer">
+                <p>Contactate con nosotros</p>
+
+                <div class="d-flex gap-2">
+                    <img
+                        src="img/instagram.png"
+                        alt="Instagram"
+                        class="icono-footer">
+
+                    <img
+                        src="img/whatsapp.png"
+                        alt="WhatsApp"
+                        class="icono-footer">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap: permite que funcione el menú desplegable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

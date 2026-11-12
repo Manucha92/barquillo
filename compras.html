@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compras | Barquillo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-4">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Barquillo - Inicio" width="120">
+            </a>
+
+            <!-- Botón del menú para celulares -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir o cerrar el menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Carta</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservá</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visitanos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego del barquillero</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link active" href="compras.html" aria-current="page">Compras</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <main>
+        
+        <section class="encabezado-compras">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+
+            <!-- Texto -->
+            <div class="col-12 col-md-6 texto-encabezado-compras">
+                <h1><em>Barquillo en casa</em></h1>
+
+                <p>
+                    Los sabores de siempre,<br>
+                    para llevar y compartir
+                </p>
+            </div>
+
+            <!-- Imagen -->
+            <div class="col-12 col-md-6">
+                <img
+                    src="img/barquillos-compras.png"
+                    alt="Barquillos de chocolate y pistacho en una bolsa de Barquillo"
+                    class="imagen-encabezado-compras">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="productos-compras">
+    <div class="container">
+
+        <h2>Elegí tus favoritos</h2>
+
+        <div class="row g-4">
+
+            <!-- Galletitas -->
+            <div class="col-12 col-md-4">
+                <article class="card h-100 producto-compra">
+                    <img
+                        src="img/lata-galletitas.png"
+                        class="card-img-top"
+                        alt="Lata de galletitas surtidas">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3>Lata de galletitas</h3>
+
+                        <p>Una selección de nuestras galletitas de manteca para compartir</p>
+
+                        <p class="precio-producto">$45.000</p>
+
+                        <button
+                            type="button"
+                            class="boton-comprar mt-auto"
+                            data-nombre="Lata de galletitas"
+                            data-precio="45000">
+                            AGREGAR AL CARRITO
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Oreo -->
+            <div class="col-12 col-md-4">
+                <article class="card h-100 producto-compra">
+                    <img
+                        src="img/lata-oreo.png"
+                        class="card-img-top"
+                        alt="Lata de alfajores Oreo con chocolate blanco y negro">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3>Lata de alfajores Oreo</h3>
+
+                        <p>Alfajores Oreo bañadas en chocolate blanco y negro</p>
+
+                        <p class="precio-producto">$65.000</p>
+
+                        <button
+                            type="button"
+                            class="boton-comprar mt-auto"
+                            data-nombre="Lata de alfajores Oreo"
+                            data-precio="65000">
+                            AGREGAR AL CARRITO
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Anillito -->
+            <div class="col-12 col-md-4">
+                <article class="card h-100 producto-compra">
+                    <img
+                        src="img/lata-anillito.png"
+                        class="card-img-top"
+                        alt="Lata de anillitos rellenos">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3>Lata de anillitos rellenos</h3>
+
+                        <p>El clásico anillito, convertido en alfajor</p>
+
+                        <p class="precio-producto">$50.000</p>
+
+                        <button
+                            type="button"
+                            class="boton-comprar mt-auto"
+                            data-nombre="Lata de anillitos rellenos"
+                            data-precio="50000">
+                            AGREGAR AL CARRITO
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="carrito-compras">
+    <div class="container">
+
+        <h2 class="titulo-carrito">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true">
+            <path d="M2 3h3l3 12h11l3-9H6"></path>
+            <path d="M8 15l-1 3h12"></path>
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="18" cy="21" r="1"></circle>
+        </svg>
+        
+        Tu carrito
+    </h2>
+
+        <p>Elegí tus productos preferidos para disfrutar en casa</p>
+
+        <ul id="lista-carrito">
+            <li>¡Todavía no agregaste productos!</li>
+        </ul>
+
+        <p class="total-carrito">
+            Total: <strong id="total-carrito">$0</strong>
+        </p>
+
+        <button
+            type="button"
+            class="boton-comprar"
+            id="finalizar-compra"
+            disabled>
+            FINALIZAR COMPRA
+        </button>
+
+        <button
+            type="button"
+            class="boton-comprar"
+            id="vaciar-carrito"
+            disabled>
+            VACIAR CARRITO
+        </button>
+
+        <p id="mensaje-compra" role="status"></p>
+
+    </div>
+</section>
+
+<section class="barquillos-para-llevar">
+    <div class="container text-center">
+
+        <h2><em>La suerte también se lleva a casa</em></h2>
+
+        <p>
+            Vení, girá la ruleta y llevate tus barquillos
+            para disfrutar en casa.
+        </p>
+
+        <a href="juego.html" class="boton-crema">
+            CONOCÉ EL JUEGO
+        </a>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="pie-pagina">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img
+                    src="img/logo.png"
+                    alt="Barquillo - Inicio"
+                    class="logo-footer">
+            </a>
+
+            <!-- Contacto -->
+            <div class="contacto-footer">
+                <p>Contactate con nosotros</p>
+
+                <div class="d-flex gap-2">
+                    <img
+                        src="img/instagram.png"
+                        alt="Instagram"
+                        class="icono-footer">
+
+                    <img
+                        src="img/whatsapp.png"
+                        alt="WhatsApp"
+                        class="icono-footer">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap: permite que funcione el menú desplegable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Funciones del carrito -->
+     <script src="js/compras.js"></script>
+
+
+</body>
+</html>

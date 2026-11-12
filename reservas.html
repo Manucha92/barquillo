@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservá | Barquillo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-4">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Barquillo - Inicio" width="120">
+            </a>
+
+            <!-- Botón del menú para celulares -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir o cerrar el menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Carta</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservas.html" aria-current="page">Reservá</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visitanos</a>
+                    </li>
+
+                   <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego del barquillero</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">Compras</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <main>
+    <section class="encabezado-reservas banner-oscuro">
+    <div class="container-fluid">
+
+        <h1><em>Tu mesa te espera</em></h1>
+
+        <p>te guardamos un lugar para vos</p>
+
+    </div>
+</section>
+
+<section class="seccion-formulario">
+    <div class="container">
+
+        <h2>Reservá tu lugar</h2>
+
+        <form class="formulario-reservas">
+            <div class="row g-4">
+
+                <!-- Nombre -->
+                <div class="col-12 col-md-6">
+                    <label for="nombre" class="form-label">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        class="form-control"
+                        autocomplete="given-name"
+                        required>
+                </div>
+
+                <!-- Apellido -->
+                <div class="col-12 col-md-6">
+                    <label for="apellido" class="form-label">
+                        Apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        class="form-control"
+                        autocomplete="family-name"
+                        required>
+                </div>
+
+                <!-- Correo electrónico -->
+                 <div class="col-12 col-md-6">
+                     <label for="correo" class="form-label">
+                        Correo electrónico
+                    </label>
+                    
+                    <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    class="form-control"
+                    autocomplete="email"
+                    required>
+                </div>
+                
+                <!-- Teléfono -->
+                 <div class="col-12 col-md-6">
+                    <label for="telefono" class="form-label">
+                        Teléfono
+                    </label>
+
+                    <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    class="form-control"
+                    autocomplete="tel"
+                    required>
+                </div>
+
+                <!-- Cantidad de personas -->
+                 <div class="col-12 col-md-4">
+                    <label for="personas" class="form-label">
+                        Cantidad de personas
+                    </label>
+                    
+                    <select id="personas" name="personas"
+                    class="form-select" required>
+                    <option value="">Elegí una opción</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    </select>
+                </div>
+                
+                <!-- Fecha -->
+                 <div class="col-12 col-md-4">
+                    <label for="fecha" class="form-label">
+                        Fecha
+                    </label>
+                    
+                    <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    class="form-control"
+                    required>
+                </div>
+
+               <!-- Horario -->
+                <div class="col-12 col-md-4">
+                    <label for="horario" class="form-label">
+                        Horario
+                    </label>
+                    
+                    <select id="horario" name="horario"
+                    class="form-select" required>
+                    <option value="">Elegí un horario</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        class="form-control"
+                        rows="4"></textarea>
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="boton-crema">
+                        RESERVAR MESA
+                    </button>
+                </div>
+
+            </div>
+        
+            <p id="mensaje-reserva" role="status" class="mt-4 mb-0"></p>
+        
+        </form>
+
+    </div>
+</section>
+
+<section class="antes-de-venir">
+    <div class="container">
+        <h2>Antes de venir</h2>
+
+        <p>Armenia 3745 (Palermo)</p>
+        <p>Martes a domingo · 9 a 20 hs</p>
+        <p>Las reservas se mantienen durante 15 minutos.</p>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="pie-pagina">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img
+                    src="img/logo.png"
+                    alt="Barquillo - Inicio"
+                    class="logo-footer">
+            </a>
+
+            <!-- Contacto -->
+            <div class="contacto-footer">
+                <p>Contactate con nosotros</p>
+
+                <div class="d-flex gap-2">
+                    <img
+                        src="img/instagram.png"
+                        alt="Instagram"
+                        class="icono-footer">
+
+                    <img
+                        src="img/whatsapp.png"
+                        alt="WhatsApp"
+                        class="icono-footer">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap: permite que funcione el menú desplegable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/reservas.js"></script>
+
+</body>
+</html>
